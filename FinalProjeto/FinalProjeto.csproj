@@ -190,6 +190,11 @@
     <Compile Include="Core\Domain\Genre.cs" />
     <Compile Include="Core\Domain\Movie.cs" />
     <Compile Include="Core\Domain\Photo.cs" />
+    <Compile Include="Core\IRepositories\IActorRepository.cs" />
+    <Compile Include="Core\IRepositories\IDirectorRepository.cs" />
+    <Compile Include="Core\IRepositories\IGenreRepository.cs" />
+    <Compile Include="Core\IRepositories\IMovieRepository.cs" />
+    <Compile Include="Core\IRepositories\IPhotoRepository.cs" />
     <Compile Include="Core\IRepositories\IRepository.cs" />
     <Compile Include="Core\IUnitOfWork.cs" />
     <Compile Include="Global.asax.cs">
@@ -204,6 +209,11 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Persistance\ApplicationDbContext.cs" />
+    <Compile Include="Persistance\Repositories\GenreRepository.cs" />
+    <Compile Include="Persistance\Repositories\MovieRepository.cs" />
+    <Compile Include="Persistance\Repositories\PhotoRepository.cs" />
+    <Compile Include="Persistance\Repositories\DirectorRepository.cs" />
+    <Compile Include="Persistance\Repositories\ActorRepository.cs" />
     <Compile Include="Persistance\Repositories\Repository.cs" />
     <Compile Include="Persistance\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
