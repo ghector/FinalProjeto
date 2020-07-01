@@ -314,6 +314,8 @@
     <Content Include="Theme\js\maps\swiper.jquery.min.js.map" />
     <Content Include="Theme\js\maps\swiper.jquery.umd.min.js.map" />
     <Content Include="Theme\js\maps\swiper.min.js.map" />
+    <Content Include="Views\Shared\Components\_UserNavigationBar.cshtml" />
+    <Content Include="Views\Shared\Components\_UserFooter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -3,30 +3,141 @@
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
+<!-- Swiper -->
+<div class="homeslider">
+    <div class="swiper-container">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="~/Theme/images/slider/poster2.jpg">
+                <div class="caption">
+                    <div class="captioninside">
+                        <h3>Movie Title</h3>
+                        <p>Lorem ipsum dolor siamet</p>
+                        <a href="single.html" class="playbutton">Play</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="~/Theme/images/slider/poster1.jpg">
+                <div class="caption">
+                    <div class="captioninside">
+                        <h3>Movie Title 2</h3>
+                        <p>Lorem ipsum dolor siamet</p>
+                        <a href="single.html" class="playbutton">Play</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="~/Theme/images/slider/poster2.jpg">
+                <div class="caption">
+                    <div class="captioninside">
+                        <h3>Movie Title 3</h3>
+                        <p>Lorem ipsum dolor siamet</p>
+                        <a href="single.html" class="playbutton">Play</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<main class="content">
+    <section class="panel">
+        <h2>Recently Added</h2>
+        <div class="recentslider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/9.jpg"><h3 class="hometitle">Space Betwen Us</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/2.jpg"><h3 class="hometitle">John Wick</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/3.jpg"><h3 class="hometitle">Spider-Man Homecoming</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/4.jpg"><h3 class="hometitle">Beauty and the Beast</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/5.jpg"><h3 class="hometitle">Pirates of the Caribbean: Dead Men Tell No Tales</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/6.jpg"><h3 class="hometitle">Fifty Shades Darker</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/7.jpg"><h3 class="hometitle">Transformers: The Last Knight</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/8.jpg"><h3 class="hometitle">xXx: Return of Xander Cage</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/9.jpg"><h3 class="hometitle">Space Betwen Us</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/2.jpg"><h3 class="hometitle">John Wick</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/3.jpg"><h3 class="hometitle">Spider-Man Homecoming</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/4.jpg"><h3 class="hometitle">Beauty and the Beast</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/5.jpg"><h3 class="hometitle">Pirates of the Caribbean: Dead Men Tell No Tales</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/6.jpg"><h3 class="hometitle">Fifty Shades Darker</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/7.jpg"><h3 class="hometitle">Transformers: The Last Knight</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/8.jpg"><h3 class="hometitle">xXx: Return of Xander Cage</h3></a></div>
+
+                    <div class="swiper-slide"><a href="mostwatched.html"><img src="~/Theme/img/others.png"></a></div>
+                </div>
+                <div class="nextdirection recent-next"><img src="img/right-arrow.svg"> </div>
+                <div class="leftdirection recent-prev"><img src="img/left-arrow.svg"> </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Most Watched</h2>
+        <div class="mostslider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/9.jpg"><h3 class="hometitle">Space Betwen Us</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/2.jpg"><h3 class="hometitle">John Wick</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/3.jpg"><h3 class="hometitle">Spider-Man Homecoming</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/4.jpg"><h3 class="hometitle">Beauty and the Beast</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/5.jpg"><h3 class="hometitle">Pirates of the Caribbean: Dead Men Tell No Tales</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/6.jpg"><h3 class="hometitle">Fifty Shades Darker</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/7.jpg"><h3 class="hometitle">Transformers: The Last Knight</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/8.jpg"><h3 class="hometitle">xXx: Return of Xander Cage</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/9.jpg"><h3 class="hometitle">Space Betwen Us</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/2.jpg"><h3 class="hometitle">John Wick</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/3.jpg"><h3 class="hometitle">Spider-Man Homecoming</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/4.jpg"><h3 class="hometitle">Beauty and the Beast</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/5.jpg"><h3 class="hometitle">Pirates of the Caribbean: Dead Men Tell No Tales</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/6.jpg"><h3 class="hometitle">Fifty Shades Darker</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/7.jpg"><h3 class="hometitle">Transformers: The Last Knight</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/8.jpg"><h3 class="hometitle">xXx: Return of Xander Cage</h3></a></div>
+
+                    <div class="swiper-slide"><a href="mostwatched.html"><img src="img/others.png"></a></div>
+                </div>
+                <div class="nextdirection most-next"><img src="~/Theme/img/right-arrow.svg"> </div>
+                <div class="leftdirection most-prev"><img src="~/Theme/img/left-arrow.svg"> </div>
+                <!-- Add Pagination -->
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Top Rated</h2>
+        <div class="topslider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/9.jpg"><h3 class="hometitle">Space Betwen Us</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/2.jpg"><h3 class="hometitle">John Wick</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/3.jpg"><h3 class="hometitle">Spider-Man Homecoming</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/4.jpg"><h3 class="hometitle">Beauty and the Beast</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/5.jpg"><h3 class="hometitle">Pirates of the Caribbean: Dead Men Tell No Tales</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/6.jpg"><h3 class="hometitle">Fifty Shades Darker</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/7.jpg"><h3 class="hometitle">Transformers: The Last Knight</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/8.jpg"><h3 class="hometitle">xXx: Return of Xander Cage</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/9.jpg"><h3 class="hometitle">Space Betwen Us</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/2.jpg"><h3 class="hometitle">John Wick</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/3.jpg"><h3 class="hometitle">Spider-Man Homecoming</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/4.jpg"><h3 class="hometitle">Beauty and the Beast</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/5.jpg"><h3 class="hometitle">Pirates of the Caribbean: Dead Men Tell No Tales</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/6.jpg"><h3 class="hometitle">Fifty Shades Darker</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/7.jpg"><h3 class="hometitle">Transformers: The Last Knight</h3></a></div>
+                    <div class="swiper-slide"><a href="single.html"><img src="~/Theme/images/8.jpg"><h3 class="hometitle">xXx: Return of Xander Cage</h3></a></div>
+
+                    <div class="swiper-slide"><a href="mostwatched.html"><img src="img/others.png"></a></div>
+                </div>
+                <div class="nextdirection top-next"><img src="~/Theme/img/right-arrow.svg"> </div>
+                <div class="leftdirection top-prev"><img src="~/Theme/img/left-arrow.svg"> </div>
+                <!-- Add Pagination -->
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
