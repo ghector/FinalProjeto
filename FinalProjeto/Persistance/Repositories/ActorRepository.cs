@@ -15,9 +15,9 @@ namespace FinalProjeto.Persistance.Repositories
 
         }
 
-
-
-
-        
+        public IEnumerable<Actor> GetAllFromOneCountry(Country country)
+        {
+            return Context.Actors.Where(x => x.Country == country).OrderBy(x=>x.LastName);
+        }
     }
 }

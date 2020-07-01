@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FinalProjeto;
+using FinalProjeto.Core.Domain;
 using FinalProjeto.Persistance;
 
 namespace Peiramata
@@ -15,11 +16,14 @@ namespace Peiramata
 
             UnitOfWork db = new UnitOfWork(new ApplicationDbContext());
 
-            foreach (var item in db.Actors.GetAll())
+            var lista = db.Actors.GetAllFromOneCountry(Country.United_Kingdom);
+
+            foreach (var item in lista)
             {
-                Console.WriteLine(item.LastName);
+                Console.WriteLine("{0,-15}{1,-15}", item.LastName, item.Country);
             }
-            
+
+
         }
     }
 }

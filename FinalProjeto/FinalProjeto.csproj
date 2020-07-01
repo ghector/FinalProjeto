@@ -241,6 +241,41 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Theme\css\styles.css" />
+    <Content Include="Theme\css\swiper.css" />
+    <Content Include="Theme\css\swiper.min.css" />
+    <Content Include="Theme\images\2.jpg" />
+    <Content Include="Theme\images\3.jpg" />
+    <Content Include="Theme\images\4.jpg" />
+    <Content Include="Theme\images\5.jpg" />
+    <Content Include="Theme\images\6.jpg" />
+    <Content Include="Theme\images\7.jpg" />
+    <Content Include="Theme\images\8.jpg" />
+    <Content Include="Theme\images\9.jpg" />
+    <Content Include="Theme\images\slider\poster1.jpg" />
+    <Content Include="Theme\images\slider\poster2.jpg" />
+    <Content Include="Theme\img\1.jpg" />
+    <Content Include="Theme\img\2.jpg" />
+    <Content Include="Theme\img\3.jpg" />
+    <Content Include="Theme\img\ai-dil-hai-mushkil.jpg" />
+    <Content Include="Theme\img\beiimaan-love.jpg" />
+    <Content Include="Theme\img\left-arrow.svg" />
+    <Content Include="Theme\img\logo.png" />
+    <Content Include="Theme\img\logo.svg" />
+    <Content Include="Theme\img\menu.svg" />
+    <Content Include="Theme\img\others.png" />
+    <Content Include="Theme\img\raaz-reboot.jpg" />
+    <Content Include="Theme\img\right-arrow.svg" />
+    <Content Include="Theme\img\search.svg" />
+    <Content Include="Theme\img\tum-bin.jpg" />
+    <Content Include="Theme\js\jquery-3.1.1.min.js" />
+    <Content Include="Theme\js\script.js" />
+    <Content Include="Theme\js\swiper.jquery.js" />
+    <Content Include="Theme\js\swiper.jquery.min.js" />
+    <Content Include="Theme\js\swiper.jquery.umd.js" />
+    <Content Include="Theme\js\swiper.jquery.umd.min.js" />
+    <Content Include="Theme\js\swiper.js" />
+    <Content Include="Theme\js\swiper.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -251,7 +286,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -275,6 +310,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_UserLayout.cshtml" />
+    <Content Include="Theme\js\maps\swiper.jquery.min.js.map" />
+    <Content Include="Theme\js\maps\swiper.jquery.umd.min.js.map" />
+    <Content Include="Theme\js\maps\swiper.min.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

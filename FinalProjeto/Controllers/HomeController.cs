@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProjeto.Core.Domain;
+using FinalProjeto.Persistance;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +10,10 @@ namespace FinalProjeto.Controllers
 {
     public class HomeController : Controller
     {
+        UnitOfWork db = new UnitOfWork(new ApplicationDbContext());
         public ActionResult Index()
         {
+            
             return View();
         }
 
