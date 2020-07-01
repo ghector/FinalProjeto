@@ -1,5 +1,6 @@
 ﻿using FinalProjeto.Core.Domain;
 using FinalProjeto.Persistance;
+using FinalProjeto.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,13 @@ namespace FinalProjeto.Controllers
         UnitOfWork db = new UnitOfWork(new ApplicationDbContext());
         public ActionResult Index()
         {
-            
-            return View();
+            HomeViewModel vm = new HomeViewModel()
+            {
+                Movies = db.Movies.GetAll(5)
+
+            };
+
+            return View(vm);
         }
 
         public ActionResult About()

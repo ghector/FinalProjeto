@@ -15,9 +15,9 @@ namespace FinalProjeto.Persistance.Repositories
 
         }
 
-
-
-
-
+        public IEnumerable<Movie> GetAll(int numberOfMovies)
+        {
+            return Context.Movies.Take(numberOfMovies).ToList();
+        }
     }
 }
