@@ -183,6 +183,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MovieController.cs" />
     <Compile Include="Core\CustomValidations\MyValidationMethods.cs" />
     <Compile Include="Core\Domain\Actor.cs" />
     <Compile Include="Core\Domain\Country.cs" />
@@ -318,6 +319,7 @@
     <Content Include="Theme\js\maps\swiper.min.js.map" />
     <Content Include="Views\Shared\Components\_UserNavigationBar.cshtml" />
     <Content Include="Views\Shared\Components\_UserFooter.cshtml" />
+    <Content Include="Views\Movie\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -16,7 +16,8 @@ namespace FinalProjeto.Controllers
         {
             HomeViewModel vm = new HomeViewModel()
             {
-                Movies = db.Movies.GetAll(5)
+                Movies = db.Movies.GetAll(20),
+                TopMoviesByGenre = db.Movies.GetTopMoviesByGenre("Drama", 20)
 
             };
 

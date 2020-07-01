@@ -9,6 +9,7 @@ namespace FinalProjeto.ViewModels
     public class HomeViewModel
     {
         public IEnumerable<Movie> Movies { get; set; }
+        public IEnumerable<Movie> TopMoviesByGenre { get; set; }
 
     }
 }

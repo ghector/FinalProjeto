@@ -19,5 +19,15 @@ namespace FinalProjeto.Persistance.Repositories
         {
             return Context.Movies.Take(numberOfMovies).ToList();
         }
+
+        public IEnumerable<Movie> GetTopMoviesByGenre(string genreKind)
+        {
+            return Context.Movies.Where(x => x.Genre.Kind == genreKind).OrderByDescending(x => x.Rating).ToList();
+        }
+
+        public IEnumerable<Movie> GetTopMoviesByGenre(string genreKind, int count)
+        {
+            return Context.Movies.Where(x => x.Genre.Kind == genreKind).OrderByDescending(x => x.Rating).Take(count).ToList();
+        }
     }
 }
