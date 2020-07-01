@@ -2,9 +2,133 @@
 
 @{
     ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+
 }
 
 <h2>Details</h2>
+
+
+
+<main class="content">
+    <div class="single">
+
+        <section class="trailer">
+            <h3>Trailer</h3>
+            <div class="trailer_frame">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x73-573aWfs" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="movie">
+            <img src=@Model.PhotoUrl>
+            <ul>
+                <li>@Model.Title</li>
+                <li>The first human born on Mars travels to Earth for the first time, experiencing the wonders of the planet through fresh eyes. He embarks on an adventure with a street smart girl to discover how he came to be.</li>
+                <li>Genre : @Model.Genre.Kind</li>
+                <li>
+
+                    Actors :
+
+                    @foreach (var actor in Model.Actors)
+                    {
+                        <a href="\Actor\Details\@actor.ActorId">@string.Format("{0} {1}", actor.FirstName, actor.LastName)</a> <span>,</span>
+                    }
+
+
+                   
+                </li>
+
+                @{ 
+                    TimeSpan spWorkMin = TimeSpan.FromMinutes(Model.Duration);
+                    string workHours = string.Format("{0}h {1:00}min", (int)spWorkMin.TotalHours, spWorkMin.Minutes);
+                }
+                
+
+
+                <li>Director : <a href="\Director\Details\@Model.Director.DirectorId">@string.Format("{0} {1}", Model.Director.FirstName, Model.Director.LastName)</a></li>
+                <li>Duration : @workHours</li>
+                <li>Price : @string.Format("{0:C2}",Model.Price)</li>
+            </ul>
+        </section>
+        <section class="links">
+            <h3>Links</h3>
+            <ul class="dlinks">
+                <li><a>Download</a></li>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+            </ul>
+            <ul class="wlinks">
+                <li><a>Watch</a></li>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+            </ul>
+        </section>
+
+        <section class="related">
+            <h3>Related movies</h3>
+            <div class="relatemovie">
+                <a href="#"><img src="images/2.jpg"></a>
+                <a href="#"><span class="relatedname">John Wick</span></a>
+            </div>
+            <div class="relatemovie">
+                <a href="#"><img src="images/3.jpg"></a>
+                <a href="#"><span class="relatedname">Spider Man Homecoming</span></a>
+            </div>
+            <div class="relatemovie">
+                <a href="#"><img src="images/4.jpg"></a>
+                <a href="#"><span class="relatedname">Beauty and Beast</span></a>
+            </div>
+            <div class="relatemovie">
+                <a href="#"><img src="images/5.jpg"></a>
+                <a href="#"><span class="relatedname">Pirates of the Caribbean: Dead Men Tell No Tales</span></a>
+            </div>
+            <div class="relatemovie">
+                <a href="#"><img src="images/6.jpg"></a>
+                <a href="#"><span class="relatedname">Fifty Shades Darker</span></a>
+            </div>
+            <div class="relatemovie">
+                <a href="#"><img src="images/7.jpg"></a>
+                <a href="#"><span class="relatedname">Transformers</span></a>
+            </div>
+
+        </section>
+
+        <section class="comments">
+            <h3>Comments</h3>
+        </section>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div>
     <h4>Movie</h4>
