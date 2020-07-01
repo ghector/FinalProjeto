@@ -183,6 +183,13 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Core\CustomValidations\MyValidationMethods.cs" />
+    <Compile Include="Core\Domain\Actor.cs" />
+    <Compile Include="Core\Domain\Country.cs" />
+    <Compile Include="Core\Domain\Director.cs" />
+    <Compile Include="Core\Domain\Genre.cs" />
+    <Compile Include="Core\Domain\Movie.cs" />
+    <Compile Include="Core\Domain\Photo.cs" />
     <Compile Include="Core\IRepositories\IRepository.cs" />
     <Compile Include="Core\IUnitOfWork.cs" />
     <Compile Include="Global.asax.cs">
@@ -256,7 +263,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Core\Domain\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
