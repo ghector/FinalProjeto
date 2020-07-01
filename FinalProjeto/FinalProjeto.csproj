@@ -268,6 +268,7 @@
     <Content Include="Theme\img\right-arrow.svg" />
     <Content Include="Theme\img\search.svg" />
     <Content Include="Theme\img\tum-bin.jpg" />
+    <Content Include="Theme\js\InitializeSwiper.js" />
     <Content Include="Theme\js\jquery-3.1.1.min.js" />
     <Content Include="Theme\js\script.js" />
     <Content Include="Theme\js\swiper.jquery.js" />
