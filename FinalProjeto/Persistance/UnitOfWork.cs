@@ -1,4 +1,6 @@
 ﻿using FinalProjeto.Core;
+using FinalProjeto.Core.IRepositories;
+using FinalProjeto.Persistance.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,19 +13,23 @@ namespace FinalProjeto.Persistance
     {
         private readonly ApplicationDbContext _context;
 
-        //public IStudentRepository Students { get; private set; }
 
-       // public IProjectRepository Projects { get; private set; }
+        public IActorRepository Actors { get; private set; }
+        public IDirectorRepository Directors { get; private set; }
+        public IGenreRepository Genres { get; private set; }
+        public IPhotoRepository Photos { get; private set; }
+        public IMovieRepository Movies { get; private set; }
 
 
 
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
-           // Students = new StudentRepository(_context);
-         //   Projects = new ProjectRepository(_context);
-
-
+            Actors = new ActorRepository(_context);
+            Directors = new DirectorRepository(_context);
+            Genres = new GenreRepository(_context);
+            Photos = new PhotoRepository(_context);
+            Movies = new MovieRepository(_context);
         }
 
 
