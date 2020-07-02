@@ -6,13 +6,12 @@ using System.Web.Mvc;
 
 namespace FinalProjeto.Controllers
 {
-    public class AdministratorController : Controller
+    [Authorize]
+    public class ManageStatsController : Controller
     {
-        // GET: Administrator
+        // GET: ManageStats
         public ActionResult Index()
         {
-
-
             return View();
         }
     }

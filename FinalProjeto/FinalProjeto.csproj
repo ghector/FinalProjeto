@@ -183,7 +183,13 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdministratorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageActorController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ManageDirectorController.cs" />
+    <Compile Include="Controllers\ManageGenreController.cs" />
+    <Compile Include="Controllers\ManageMovieController.cs" />
+    <Compile Include="Controllers\ManagePhotoController.cs" />
+    <Compile Include="Controllers\ManageStatsController.cs" />
     <Compile Include="Controllers\MovieController.cs" />
     <Compile Include="Core\CustomValidations\MyValidationMethods.cs" />
     <Compile Include="Core\Domain\Actor.cs" />
@@ -323,6 +329,32 @@
     <Content Include="Views\Movie\Details.cshtml" />
     <Content Include="Views\Shared\_LoginPartialUser.cshtml" />
     <Content Include="Views\Administrator\Index.cshtml" />
+    <Content Include="Views\ManageMovie\Create.cshtml" />
+    <Content Include="Views\ManageMovie\Delete.cshtml" />
+    <Content Include="Views\ManageMovie\Details.cshtml" />
+    <Content Include="Views\ManageMovie\Edit.cshtml" />
+    <Content Include="Views\ManageMovie\Index.cshtml" />
+    <Content Include="Views\ManageActor\Create.cshtml" />
+    <Content Include="Views\ManageActor\Delete.cshtml" />
+    <Content Include="Views\ManageActor\Details.cshtml" />
+    <Content Include="Views\ManageActor\Edit.cshtml" />
+    <Content Include="Views\ManageActor\Index.cshtml" />
+    <Content Include="Views\ManageDirector\Create.cshtml" />
+    <Content Include="Views\ManageDirector\Delete.cshtml" />
+    <Content Include="Views\ManageDirector\Details.cshtml" />
+    <Content Include="Views\ManageDirector\Edit.cshtml" />
+    <Content Include="Views\ManageDirector\Index.cshtml" />
+    <Content Include="Views\ManageGenre\Create.cshtml" />
+    <Content Include="Views\ManageGenre\Delete.cshtml" />
+    <Content Include="Views\ManageGenre\Details.cshtml" />
+    <Content Include="Views\ManageGenre\Edit.cshtml" />
+    <Content Include="Views\ManageGenre\Index.cshtml" />
+    <Content Include="Views\ManagePhoto\Create.cshtml" />
+    <Content Include="Views\ManagePhoto\Delete.cshtml" />
+    <Content Include="Views\ManagePhoto\Details.cshtml" />
+    <Content Include="Views\ManagePhoto\Edit.cshtml" />
+    <Content Include="Views\ManagePhoto\Index.cshtml" />
+    <Content Include="Views\ManageStats\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

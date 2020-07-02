@@ -10,6 +10,7 @@ using FinalProjeto.Models;
 
 namespace FinalProjeto.Controllers
 {
+    
     [Authorize]
     public class ManageController : Controller
     {
