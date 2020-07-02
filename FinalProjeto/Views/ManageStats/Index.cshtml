@@ -5,3 +5,37 @@
 
 <h2>Eimai i stat</h2>
 
+<ul id="soma">
+
+
+
+</ul>
+
+
+
+@section scripts{
+    <script>
+        var ele = document.getElementById("soma");
+
+        var settings = {
+            "url": "/api/MovieApi",
+            "method": "GET",
+            "timeout": 0,
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            for (var i in response) {
+                var li = document.createElement("li");
+                li.innerText = response[i].title;
+                ele.appendChild(li);
+            }
+
+           
+        });
+
+
+    </script>
+    
+    
+    }
