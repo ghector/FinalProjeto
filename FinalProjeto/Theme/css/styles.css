@@ -27,7 +27,8 @@ body{font-family: arial,sans-serif; background-color: #191919; position: relativ
 .menu > ul{float: left; margin: 0 20px;}
 .menu > ul > li{list-style:none; float: left; position: relative; cursor: pointer;}
 .menu > ul > li > a{float:left;text-decoration: none; color: #a0a0a0; font-size: 15px; padding: 15px 5px;}
-.menu > ul > li:hover > a{color:#fff;}
+.menu > ul > li:hover > a{color:#ffff00;}
+.menu > ul > li > a{color:#ffff00;}
 .menu > ul > li:hover ul{display: block;}
 
 .menu > ul > li > ul{display:none;position: absolute;top: 45px;background-color: #000;width: 200px;}

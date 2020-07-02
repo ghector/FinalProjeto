@@ -27,7 +27,7 @@ namespace FinalProjeto
                       "~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/themecss").Include(
-             "~/Theme/css/swiper.min.css",
+             "~/Theme/css/swiper.css",
              "~/Theme/css/styles.css"));
 
          //   bundles.Add(new ScriptBundle("~/Mitsos/pano").Include(
